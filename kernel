@@ -6,7 +6,7 @@ kernel="$1"
 # use already installed kernel if it exists
 [[ ! -f "$KERNELDESTINATION" ]] || kernel="$KERNELDESTINATION"
 
-keypairs=(/path/to/MOK.key /path/to/MOK.crt)
+keypairs=(/MOK.key /MOK.crt)
 
 for (( i=0; i<${#keypairs[@]}; i+=2 )); do
     key="${keypairs[$i]}" cert="${keypairs[(( i + 1 ))]}"
