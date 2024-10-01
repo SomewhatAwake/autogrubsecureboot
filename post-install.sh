@@ -1,4 +1,4 @@
-sudo pacman -S git sbsigntools
+sudo pacman -S sbsigntools
 git clone https://aur.archlinux.org/yay.git
 cd yay/
 makepkg -sci
