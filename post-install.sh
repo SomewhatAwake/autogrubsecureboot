@@ -1,9 +1,9 @@
 sudo pacman -S sbsigntools
-git clone https://aur.archlinux.org/yay.git
-cd yay/
+git clone https://aur.archlinux.org/paru.git
+cd paru/
 makepkg -sci
 cd ..
-yay -S shim-signed
+paru -S shim-signed
 sudo mv /boot/EFI/BOOT/BOOTx64.EFI /boot/EFI/BOOT/grubx64.efi
 sudo cp /usr/share/shim-signed/shimx64.efi /boot/EFI/BOOT/BOOTx64.EFI
 sudo cp /usr/share/shim-signed/mmx64.efi /boot/EFI/BOOT/
