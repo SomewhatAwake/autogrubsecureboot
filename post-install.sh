@@ -1,4 +1,4 @@
-sudo pacman -S sbsigntools
+sudo pacman -S sbsigntools git
 git clone https://aur.archlinux.org/paru.git
 cd paru/
 makepkg -sci
